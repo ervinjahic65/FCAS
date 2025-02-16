@@ -350,5 +350,24 @@
                 </div>
             </footer>
         </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+            // Select all navigation buttons and corresponding service items
+                const navButtons = document.querySelectorAll('.services-block-nav button');
+                const serviceItems = document.querySelectorAll('.services-block-list .services-block-item');
+
+                navButtons.forEach((button, index) => {
+                    button.addEventListener('click', () => {
+                    // Remove the active class from all buttons
+                    navButtons.forEach(btn => btn.classList.remove('active'));
+                    // Remove the active class from all service items
+                    serviceItems.forEach(item => item.classList.remove('active'));
+                    // Add the active class to the clicked button and its corresponding service item
+                    button.classList.add('active');
+                    serviceItems[index].classList.add('active');
+                    });
+                });
+            });
+        </script>
     </body>
 </html>
