@@ -1,1 +1,1 @@
-Check on this link https://financialplr.com/in/
+Check on this link https://financialplr.netlify.app/in/
